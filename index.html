@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name='viewport' content="with=device-with, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- <script src="https://kit.fontawesome.com/1604ca36d4.js" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mode">
+            <span class="material-icons-round mode--light">
+                <ion-icon name="sunny-outline"></ion-icon>
+            </span>
+            <span class="material-icons-round mode--dark">
+                <ion-icon name="moon-outline"></ion-icon>
+            </span>
+        </div>
+
+        <div class="container__result" >
+            <input type="text" class="container__result--first-row" id='first-row' value="" disabled />
+            <input type="text" class="container__result--second-row" id='second-row' value="" disabled />
+        </div>
+
+        <div class="container__board">
+            <button value="ac" class="button button--rectangle button--clear all-clear">AC</button>
+            <button value="(" class="button button--rectangle bracket">(</button>
+            <button value=")" class="button button--rectangle bracket">)</button>
+            <button value="c" class="button button--rectangle clear"><</button>
+
+            <button value="Sin(" class="button button--radius math-formula">sin</button>
+            <button value="Cos(" class="button button--radius math-formula">cos</button>
+            <button value="Tan(" class="button button--radius math-formula">tan</button>
+            <button value="pi" class="button button--radius special-number"><i class="fas fa-pi"></i></button>
+            <button value="1" class="button button--radius number">1</button>
+            <button value="2" class="button button--radius number">2</button>
+            <button value="3" class="button button--radius number">3</button>
+            <button value="/" class="button button--radius button--cal operator">/
+            </button>
+
+            <button value="Log(" class="button button--radius math-formula">log</button>
+            <button value="Sqrt(" class="button button--radius math-formula">sqrt</button>
+            <button value="Sqr(" class="button button--radius math-formula">sqr</button>
+            <button value="e" class="button button--radius special-number">e</button>
+            <button value="4" class="button button--radius number">4</button>
+            <button value="5" class="button button--radius number">5</button>
+            <button value="6" class="button button--radius number">6</button>
+            <button value="*" class="button button--radius button--cal operator">x</button>
+
+            <button value="!" class="button button--radius math-formula">x!</button>
+            <button value="" class="button button--radius"><img src='./styles/images/penguin.png' class='penguin' /></button>
+            <button value="" class="button button--radius"><img src="./styles/images/otter.png" class='otter' /></button>
+            <button value="%" class="button button--radius operator">%</button>
+            <button value="7" class="button button--radius number">7</button>
+            <button value="8" class="button button--radius number">8</button>
+            <button value="9" class="button button--radius number">9</button>
+            <button value="+" class="button button--radius button--cal operator">-</button>
+
+            <button value="" class="button button--rectangle paste">paste</button>
+            <button value="" class="button button--rectangle copy">copy</button>
+            <button value="." class="button button--radius decimal">.</button>
+            <button value="0" class="button button--radius number">0</i></button>
+            <button value="=" class="button button--radius equals">=</button>
+            <button value="-" class="button button--radius button--cal operator">+</button>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+
+</html>

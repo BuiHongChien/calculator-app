@@ -1,0 +1,203 @@
+.button {
+  text-align: center;
+  border: none;
+  height: calc(10%-0.4%);
+  outline: none;
+  font-size: 2.4rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 0;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  font-size: calc(2.4rem*1.05);
+}
+
+.button--rectangle {
+  -webkit-box-shadow: 0 0.5rem 0rem #222a2f;
+          box-shadow: 0 0.5rem 0rem #222a2f;
+  background-color: #283339;
+  color: rgba(213, 194, 188, 0.9);
+  border-radius: 1rem;
+  width: calc(25% - 1.125rem - 0.2rem);
+}
+
+.button--rectangle:active {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: inset 0 0 2rem #222a2f;
+          box-shadow: inset 0 0 2rem #222a2f;
+}
+
+.button--clear {
+  -webkit-box-shadow: 0 0.5rem 0rem #ae6976;
+          box-shadow: 0 0.5rem 0rem #ae6976;
+  background-color: #bd707e !important;
+  color: rgba(40, 51, 57, 0.9);
+  border-radius: 1rem;
+}
+
+.button--clear:active {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: inset 0 0 2rem #bd707e;
+          box-shadow: inset 0 0 2rem #bd707e;
+}
+
+.button--radius {
+  -webkit-box-shadow: 0 0.5rem 0rem #d5c2bc;
+          box-shadow: 0 0.5rem 0rem #d5c2bc;
+  background-color: #f3efea;
+  color: rgba(34, 42, 47, 0.9);
+  border-radius: 1rem;
+  width: calc(12.5% - 1.3125rem - 0.2rem);
+}
+
+.button--radius:active {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: inset 0 0 2rem #d5c2bc;
+          box-shadow: inset 0 0 2rem #d5c2bc;
+}
+
+.button--cal {
+  -webkit-box-shadow: 0 0.5rem 0rem #ba9915;
+          box-shadow: 0 0.5rem 0rem #ba9915;
+  background-color: #c9a514;
+  color: rgba(34, 42, 47, 0.9);
+  border-radius: 1rem;
+}
+
+.button--cal:active {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: inset 0 0 2rem #ba9915;
+          box-shadow: inset 0 0 2rem #ba9915;
+}
+
+.penguin {
+  height: calc(10%-0.4%);
+  width: calc(25% - 1.125rem - 0.2rem);
+  background-color: transparent !important;
+}
+
+.otter {
+  height: calc(10%-0.4%);
+  width: calc(25% - 1.125rem - 0.2rem);
+  background-color: transparent !important;
+}
+
+ion-icon {
+  --ionicon-stroke-weight:90px;
+  font-size: 2.4rem;
+  color: aliceblue !important;
+}
+
+.container {
+  position: relative;
+  height: calc(96vh - 1.5rem - 3rem);
+  padding-top: calc(1.5rem + 3rem);
+  border: none;
+}
+
+.container__result {
+  margin-bottom: calc(1.5rem);
+  width: 100%;
+  height: 20%;
+  border-radius: 2rem;
+  background-color: rgba(215, 227, 230, 0.5);
+  -webkit-box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.4);
+  color: rgba(213, 194, 188, 0.9);
+}
+
+.container__result input {
+  font-size: 3rem;
+  outline: none;
+  border: none;
+  width: 98%;
+  height: 48%;
+  text-align: right;
+}
+
+.container__board {
+  width: 100%;
+  border: none;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+
+.mode {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 10%;
+  }
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 27%;
+  }
+}
+
+@media (min-width: 480px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+@media (min-width: 801px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (min-width: 1281px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka One', cursive;
+}
+
+body {
+  background-size: cover;
+  background-image: url(images/background.png), linear-gradient(151deg, rgba(105, 165, 196, 0.2) 0%, rgba(88, 142, 170, 0.2) 58%, rgba(70, 109, 129, 0.2) 100%);
+  padding: 2vh;
+}
+/*# sourceMappingURL=index.css.map */

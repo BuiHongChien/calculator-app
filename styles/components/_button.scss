@@ -1,0 +1,74 @@
+@import "../variables";
+@import '../mixin';
+
+.button {
+  text-align: center;
+  border: none;
+  height: calc(10%-#{$gutter-vertical * 4 / 5});
+  outline: none;
+  font-size: 2.4rem;
+  transition: all 0.2s ease-in-out;
+  padding:0;
+
+  &:hover {
+    transform: scale(1.05);
+    font-size: calc(2.4rem*1.05);
+  }
+
+  &--rectangle {
+    @include button($color-demi-grey-dark, $color-demi-grey, $color-sand-dark);
+
+    width: calc(25% - #{$gutter-horizontal * 3 / 4} - 0.2rem);
+
+    &:active{
+      @include button-active($color-demi-grey-dark);
+    }
+  }
+
+  &--clear {
+    @include button($color-blush-dark, $color-blush !important, $color-demi-grey);
+
+    &:active{
+      @include button-active($color-blush);
+    }
+  }
+
+  &--radius {
+    @include button($color-sand-dark, $color-sand , $color-demi-grey-dark);
+
+    width: calc(12.5% - #{$gutter-horizontal * 7 / 8} - 0.2rem);
+
+    &:active{
+      @include button-active($color-sand-dark);
+    }
+  }
+
+  &--cal {
+    @include button($color-yellow-dark, $color-yellow, $color-demi-grey-dark);
+
+    &:active{
+      @include button-active($color-yellow-dark);
+    }
+  }
+}
+
+.penguin {
+  height:calc(10%-#{$gutter-vertical * 4 / 5});
+  width: calc(25% - #{$gutter-horizontal * 3 / 4} - 0.2rem);
+  background-color: transparent !important;
+}
+
+.otter {
+  height:calc(10%-#{$gutter-vertical * 4 / 5});
+  width: calc(25% - #{$gutter-horizontal * 3 / 4} - 0.2rem);
+  background-color: transparent !important;
+}
+
+ion-icon{
+  --ionicon-stroke-weight:90px;
+  font-size: 2.4rem;
+  color: aliceblue !important;
+}
+
+.icon{
+}
